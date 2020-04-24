@@ -1,0 +1,77 @@
+/***************
+* GOOGLE FONTS 
+*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+/***************
+* BASE  STYLES
+*/
+
+/* 
+* Variables
+*/
+:root {
+  /* Typograghy */
+  --f-family: "Inter", sans-serif;
+  --f-size: 0.875rem;
+  --f-normal: 400;
+  --f-bold: 700;
+
+  /* Colors */
+  --lime-green: hsl(163, 72%, 41%);
+  --bright-red: hsl(356, 69%, 56%);
+  --facebook: hsl(195, 100%, 50%);
+  --twitter: hsl(203, 89%, 53%);
+  --instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
+  --youtube: hsl(348, 97%, 39%);
+
+  --toggle: hsl(230, 22%, 74%);
+  --bg: hsl(0, 0%, 100%);
+  --bg-pattern: hsl(225, 100%, 98%);
+  --card-bg: hsl(227, 47%, 96%);
+  --text-accent: hsl(228, 12%, 44%);
+  --text: hsl(230, 17%, 14%);
+
+  /* Layout */
+  --mobile: 375px;
+  --desktop: 1440px;
+}
+
+body {
+  font-family: var(--f-family);
+  font-size: var(--f-size);
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+p {
+  margin: 0;
+}
+
+/***************
+* LAYOUT STYLES
+*/
+
+
+/***************
+* COMPONENTS STYLES
+*/
+
+/***************
+* STATE STYLES
+*/
+
+/***************
+* THEME STYLES
+*/
+
+.darkTheme {
+  --toggle: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
+  --bg: hsl(230, 17%, 14%);
+  --bg-pattern: hsl(232, 19%, 15%);
+  --card-bg: hsl(228, 28%, 20%);
+  --text-accent: hsl(228, 34%, 66%);
+  --text: hsl(0, 0%, 100%);
+}
