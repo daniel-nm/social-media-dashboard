@@ -26,11 +26,11 @@
 
 <body>
   <header class="header">
-    <div class="container header__title">
+    <div class="header__title container">
       <h1>Social Media Dashboard</h1>
       <p>Total Followers: 23,004</p>
     </div>
-    <div class="container flex header__mode">
+    <div class="header__mode container flex flex--justify-between flex--align-center">
       <p>Dark Mode</p>
       <form action="#">
         <div class="switch">
@@ -40,27 +40,27 @@
       </form>
     </div>
   </header>
-  <main>
-    <section>
-      <div>
-        <p>@nathanf</p>
-        <p>1987 <span>Followers</span></p>
-        <p>12 Today</p>
+  <main class="main">
+    <section class="followers container">
+      <div class="card card--big card--fb flex flex--column flex--justify-center flex--align-center">
+        <p class="card__user">@nathanf</p>
+        <p class="card__total-number">1987 <span class="card__total-name">Followers</span></p>
+        <p class="card__stats">12 Today</p>
       </div>
-      <div>
-        <p>@nathanf</p>
-        <p>1044 <span>Followers</span></p>
-        <p> 99 Today</p>
+      <div class="card card--big card--tw flex flex--column flex--justify-center flex--align-center">
+        <p class="card__user">@nathanf</p>
+        <p class="card__total-number">1044 <span class="card__total-name">Followers</span></p>
+        <p class="card__stats"> 99 Today</p>
       </div>
-      <div>
-        <p> @realnathanf</p>
-        <p>11k <span>Followers</span></p>
-        <p>1099 Today</p>
+      <div class="card card--big card--ins flex flex--column flex--justify-center flex--align-center">
+        <p class="card__user"> @realnathanf</p>
+        <p class="card__total-number">11k <span class="card__total-name">Followers</span></p>
+        <p class="card__stats">1099 Today</p>
       </div>
-      <div>
-        <p>Nathan F.</p>
-        <p>8239 <span>Subscribers</span></p>
-        <p>144 Today</p>
+      <div class="card card--big card--yt flex flex--column flex--justify-center flex--align-center">
+        <p class="card__user">Nathan F.</p>
+        <p class="card__total-number">8239 <span class="card__total-name">Subscribers</span></p>
+        <p class="card__stats card__stats--down">144 Today</p>
       </div>
     </section>
     <section>
