@@ -31,6 +31,7 @@
   --card-bg: hsl(227, 47%, 96%);
   --text-accent: hsl(228, 12%, 44%);
   --text: hsl(230, 17%, 14%);
+  --link: hsl(228, 45%, 44%);
 
   /* Layout */
   --mobile: 375px;
@@ -48,6 +49,15 @@ body {
 h1,
 p {
   margin: 0;
+}
+
+.link {
+  color: var(--link);
+}
+
+.text-bold-style {
+  color: var(--text-accent);
+  font-weight: var(--f-bold);
 }
 
 /***************
@@ -72,6 +82,10 @@ p {
   justify-content: center;
 }
 
+.flex--justify-evenly {
+  justify-content: space-evenly;
+}
+
 .flex--align-center {
   align-items: center;
 }
@@ -80,17 +94,33 @@ p {
   flex-direction: column;
 }
 
-.header {
+.header,
+.footer {
   background-color: var(--bg-pattern);
+}
+
+.header {
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
   padding: 2.625rem 0 6rem;
   /* 42px / 0 /  96px */
 }
 
+.footer {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  padding: 2rem 0;
+  text-align: center;
+}
+
 .main {
   position: relative;
   top: -3rem;
+}
+
+.followers {
+  margin-bottom: 3.25rem;
+  /* 52px */
 }
 
 
@@ -109,11 +139,6 @@ p {
   font-size: 1.5rem;
   /* 21px */
   line-height: 1.5;
-}
-
-.header p {
-  color: var(--text-accent);
-  font-weight: var(--f-bold);
 }
 
 .header__mode {
@@ -184,6 +209,10 @@ p {
   border-radius: 4px;
   height: 7.75rem;
   /* 124px */
+  position: relative;
+  padding: 0 1.875rem;
+  /* 0 / 30px */
+  margin-bottom: 1rem;
 }
 
 .card--big {
@@ -193,6 +222,15 @@ p {
   /* 24px */
   margin-bottom: 1.5rem;
   /* 24px */
+}
+
+.card--big p {
+  margin-bottom: 1.875rem;
+  /* 30px */
+}
+
+.card--big p:last-child {
+  margin-bottom: 0;
 }
 
 .card--fb,
@@ -230,30 +268,15 @@ p {
   border-top-right-radius: 8px;
 }
 
-.card--big p {
-  margin-bottom: 1.875rem;
-  /* 30px */
-
-}
-
-.card--big p:last-child {
-  margin-bottom: 0;
-}
-
-.card--big .card__user {
-  color: var(--text-accent);
-  font-weight: var(--f-bold);
-}
-
-.card--big .card__user::before,
-.card--big .card__stats::before {
+.card .card__user::before,
+.card .card__stats::before {
   content: "";
   display: inline-block;
   vertical-align: middle;
   background-repeat: no-repeat;
 }
 
-.card--big .card__user::before {
+.card .card__user::before {
   height: 20px;
   width: 20px;
   margin-right: 8px;
@@ -275,9 +298,14 @@ p {
   background-image: url(../images/icon-instagram.svg);
 }
 
+.card .card__total-number {
+  font-weight: var(--f-bold);
+  font-size: 1.5rem;
+  /* 24px */
+}
+
 .card--big .card__total-number {
   font-size: 4rem;
-  font-weight: var(--f-bold);
   text-align: center;
 }
 
@@ -291,26 +319,44 @@ p {
   margin-top: -0.5rem;
 }
 
-.card--big .card__stats {
+.card .card__stats {
   color: var(--lime-green);
   font-weight: var(--f-bold);
 }
 
-.card--big .card__stats--down {
+.card .card__stats--down {
   color: var(--bright-red);
 }
 
-.card--big .card__stats::before {
+.card .card__stats::before {
   background-image: url(../images/icon-up.svg);
   height: 5px;
   width: 8px;
   margin-right: 4px;
 }
 
-.card--big .card__stats--down::before {
+.card .card__stats--down::before {
   background-image: url(../images/icon-down.svg);
 }
 
+.card__icon {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+}
+
+/* Overview */
+.overview h2 {
+  font-size: 1.125rem;
+  /* 18px */
+  margin-bottom: 2rem;
+  /* 32px */
+}
+
+/* Attribution */
+.attribution {
+  font-size: var(--f-size);
+}
 
 /***************
 * STATE STYLES
@@ -327,4 +373,5 @@ p {
   --card-bg: hsl(228, 28%, 20%);
   --text-accent: hsl(228, 34%, 66%);
   --text: hsl(0, 0%, 100%);
+  --link: hsl(228, 45%, 44%);
 }
