@@ -15,22 +15,24 @@
 
 <body>
   <header class="header">
-    <div class="header__title container">
-      <h1>Social Media Dashboard</h1>
-      <p class="text-bold-style">Total Followers: 23,004</p>
-    </div>
-    <div class="header__mode container flex flex--justify-between flex--align-center">
-      <p class="text-bold-style">Dark Mode</p>
-      <form action="#">
-        <div class="switch">
-          <input id="switch-mode" type="checkbox" class="switch__input" />
-          <label for="switch-mode" class="switch__label">Switch mode</label>
-        </div>
-      </form>
+    <div class="container flex flex--justify-between flex--align-center">
+      <div class="header__title">
+        <h1>Social Media Dashboard</h1>
+        <p class="text-bold-style">Total Followers: 23,004</p>
+      </div>
+      <div class="header__mode flex flex--justify-between flex--align-center">
+        <p class="text-bold-style">Dark Mode</p>
+        <form action="#">
+          <div class="switch">
+            <input id="switch-mode" type="checkbox" class="switch__input" />
+            <label for="switch-mode" class="switch__label">Switch mode</label>
+          </div>
+        </form>
+      </div>
     </div>
   </header>
   <main class="main">
-    <section class="followers container">
+    <section class="followers container grid">
       <div class="card card--big card--fb flex flex--column flex--justify-center flex--align-center">
         <p class="card__user text-bold-style">@nathanf</p>
         <p class="card__total-number">1987 <span class="card__total-name">Followers</span></p>
