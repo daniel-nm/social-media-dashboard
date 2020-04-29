@@ -1,137 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Social Media Dashboard</title>
 
-  <title>Frontend Mentor | Social Media Dashboard</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
 
-  <link rel="stylesheet" href="./styles/style.css">
-</head>
-
-<body>
-  <header class="header">
-    <div class="container flex flex--justify-between flex--align-center">
-      <div class="header__title">
-        <h1>Social Media Dashboard</h1>
-        <p class="text-bold-style">Total Followers: 23,004</p>
-      </div>
-      <div class="header__mode flex flex--justify-between flex--align-center">
-        <p class="text-bold-style">Dark Mode</p>
-        <form action="#">
-          <div class="switch">
-            <input id="switch-mode" type="checkbox" class="switch__input" />
-            <label for="switch-mode" class="switch__label">Switch mode</label>
-          </div>
-        </form>
-      </div>
-    </div>
-  </header>
-  <main class="main">
-    <section class="followers container grid">
-      <div class="card card--big card--fb flex flex--column flex--justify-center flex--align-center">
-        <p class="card__user text-bold-style">@nathanf</p>
-        <p class="card__total-number">1987 <span class="card__total-name">Followers</span></p>
-        <p class="card__stats">12 Today</p>
-      </div>
-      <div class="card card--big card--tw flex flex--column flex--justify-center flex--align-center">
-        <p class="card__user text-bold-style">@nathanf</p>
-        <p class="card__total-number">1044 <span class="card__total-name">Followers</span></p>
-        <p class="card__stats"> 99 Today</p>
-      </div>
-      <div class="card card--big card--ins flex flex--column flex--justify-center flex--align-center">
-        <p class="card__user text-bold-style"> @realnathanf</p>
-        <p class="card__total-number">11k <span class="card__total-name">Followers</span></p>
-        <p class="card__stats">1099 Today</p>
-      </div>
-      <div class="card card--big card--yt flex flex--column flex--justify-center flex--align-center">
-        <p class="card__user text-bold-style">Nathan F.</p>
-        <p class="card__total-number">8239 <span class="card__total-name">Subscribers</span></p>
-        <p class="card__stats card__stats--down">144 Today</p>
-      </div>
-    </section>
-    <section class="overview container">
-      <h2 class="text-bold-style">Overview - Today</h2>
-      <div class="grid">
-        <div class="card flex flex--column flex--justify-evenly">
-          <p class="text-bold-style">Page Views</p>
-          <div class="flex flex--justify-between flex--align-center">
-            <p class="card__total-number">87</p>
-            <p class="card__stats">3%</p>
-          </div>
-          <img class="card__icon" src="./images/icon-facebook.svg" alt="Facebook">
+  <body>
+    <header class="header">
+      <div class="container flex flex--justify-between flex--align-center">
+        <div class="header__title">
+          <h1>Social Media Dashboard</h1>
+          <p class="text-bold-style">Total Followers: 23,004</p>
         </div>
-        <div class="card flex flex--column flex--justify-evenly">
-          <p class="text-bold-style">Likes</p>
-          <div class="flex flex--justify-between flex--align-center">
-            <p class="card__total-number">52</p>
-            <p class="card__stats card__stats--down">2%</p>
-          </div>
-          <img class="card__icon" src="./images/icon-facebook.svg" alt="Facebook">
-        </div>
-        <div class="card flex flex--column flex--justify-evenly">
-          <p class="text-bold-style">Likes</p>
-          <div class="flex flex--justify-between flex--align-center">
-            <p class="card__total-number">5462</p>
-            <p class="card__stats">2257%</p>
-          </div>
-          <img class="card__icon" src="./images/icon-instagram.svg" alt="Instagram">
-        </div>
-        <div class="card flex flex--column flex--justify-evenly">
-          <p class="text-bold-style">Profile Views</p>
-          <div class="flex flex--justify-between flex--align-center">
-            <p class="card__total-number">52k</p>
-            <p class="card__stats">1375%</p>
-          </div>
-          <img class="card__icon" src="./images/icon-instagram.svg" alt="Instagram">
-        </div>
-        <div class="card flex flex--column flex--justify-evenly">
-          <p class="text-bold-style">Retweets</p>
-          <div class="flex flex--justify-between flex--align-center">
-            <p class="card__total-number">117</p>
-            <p class="card__stats">303%</p>
-          </div>
-          <img class="card__icon" src="./images/icon-twitter.svg" alt="Twitter">
-        </div>
-        <div class="card flex flex--column flex--justify-evenly">
-          <p class="text-bold-style">Likes</p>
-          <div class="flex flex--justify-between flex--align-center">
-            <p class="card__total-number">507</p>
-            <p class="card__stats">553%</p>
-          </div>
-          <img class="card__icon" src="./images/icon-twitter.svg" alt="Twitter">
-        </div>
-        <div class="card flex flex--column flex--justify-evenly">
-          <p class="text-bold-style">Likes</p>
-          <div class="flex flex--justify-between flex--align-center">
-            <p class="card__total-number">107</p>
-            <p class="card__stats card__stats--down">19%</p>
-          </div>
-          <img class="card__icon" src="./images/icon-youtube.svg" alt="Youtube">
-        </div>
-        <div class="card flex flex--column flex--justify-evenly">
-          <p class="text-bold-style">Total Views</p>
-          <div class="flex flex--justify-between flex--align-center">
-            <p class="card__total-number">1407</p>
-            <p class="card__stats card__stats--down">12%</p>
-          </div>
-          <img class="card__icon" src="./images/icon-youtube.svg" alt="Youtube">
+        <div class="header__mode flex flex--justify-between flex--align-center">
+          <p class="text-bold-style">Dark Mode</p>
+          <form action="#">
+            <div class="switch">
+              <input id="switch-mode" type="checkbox" class="switch__input" />
+              <label for="switch-mode" class="switch__label">Switch mode</label>
+            </div>
+          </form>
         </div>
       </div>
-    </section>
-  </main>
-  <footer class="footer">
-    <div attribution>
-      <p>Challenge by <a class="link" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend
-          Mentor</a>.</p>
-      <p>Coded by <a class="link" href="#">Daniel Naranjo</a>.</p>
-    </div>
-  </footer>
-  <script src="./js/darkMode.js"></script>
-</body>
-
+    </header>
+    <main class="main">
+      <section class="followers container grid">
+        <div
+          class="card card--big card--fb flex flex--column flex--justify-center flex--align-center"
+        >
+          <p class="card__user text-bold-style">@nathanf</p>
+          <p class="card__total-number">
+            1987 <span class="card__total-name">Followers</span>
+          </p>
+          <p class="card__stats">12 Today</p>
+        </div>
+        <div
+          class="card card--big card--tw flex flex--column flex--justify-center flex--align-center"
+        >
+          <p class="card__user text-bold-style">@nathanf</p>
+          <p class="card__total-number">
+            1044 <span class="card__total-name">Followers</span>
+          </p>
+          <p class="card__stats">99 Today</p>
+        </div>
+        <div
+          class="card card--big card--ins flex flex--column flex--justify-center flex--align-center"
+        >
+          <p class="card__user text-bold-style">@realnathanf</p>
+          <p class="card__total-number">
+            11k <span class="card__total-name">Followers</span>
+          </p>
+          <p class="card__stats">1099 Today</p>
+        </div>
+        <div
+          class="card card--big card--yt flex flex--column flex--justify-center flex--align-center"
+        >
+          <p class="card__user text-bold-style">Nathan F.</p>
+          <p class="card__total-number">
+            8239 <span class="card__total-name">Subscribers</span>
+          </p>
+          <p class="card__stats card__stats--down">144 Today</p>
+        </div>
+      </section>
+      <section class="overview container">
+        <h2 class="text-bold-style">Overview - Today</h2>
+        <div class="grid">
+          <div class="card flex flex--column flex--justify-evenly">
+            <p class="text-bold-style">Page Views</p>
+            <div class="flex flex--justify-between flex--align-center">
+              <p class="card__total-number">87</p>
+              <p class="card__stats">3%</p>
+            </div>
+            <img
+              class="card__icon"
+              src="./images/icon-facebook.svg"
+              alt="Facebook"
+            />
+          </div>
+          <div class="card flex flex--column flex--justify-evenly">
+            <p class="text-bold-style">Likes</p>
+            <div class="flex flex--justify-between flex--align-center">
+              <p class="card__total-number">52</p>
+              <p class="card__stats card__stats--down">2%</p>
+            </div>
+            <img
+              class="card__icon"
+              src="./images/icon-facebook.svg"
+              alt="Facebook"
+            />
+          </div>
+          <div class="card flex flex--column flex--justify-evenly">
+            <p class="text-bold-style">Likes</p>
+            <div class="flex flex--justify-between flex--align-center">
+              <p class="card__total-number">5462</p>
+              <p class="card__stats">2257%</p>
+            </div>
+            <img
+              class="card__icon"
+              src="./images/icon-instagram.svg"
+              alt="Instagram"
+            />
+          </div>
+          <div class="card flex flex--column flex--justify-evenly">
+            <p class="text-bold-style">Profile Views</p>
+            <div class="flex flex--justify-between flex--align-center">
+              <p class="card__total-number">52k</p>
+              <p class="card__stats">1375%</p>
+            </div>
+            <img
+              class="card__icon"
+              src="./images/icon-instagram.svg"
+              alt="Instagram"
+            />
+          </div>
+          <div class="card flex flex--column flex--justify-evenly">
+            <p class="text-bold-style">Retweets</p>
+            <div class="flex flex--justify-between flex--align-center">
+              <p class="card__total-number">117</p>
+              <p class="card__stats">303%</p>
+            </div>
+            <img
+              class="card__icon"
+              src="./images/icon-twitter.svg"
+              alt="Twitter"
+            />
+          </div>
+          <div class="card flex flex--column flex--justify-evenly">
+            <p class="text-bold-style">Likes</p>
+            <div class="flex flex--justify-between flex--align-center">
+              <p class="card__total-number">507</p>
+              <p class="card__stats">553%</p>
+            </div>
+            <img
+              class="card__icon"
+              src="./images/icon-twitter.svg"
+              alt="Twitter"
+            />
+          </div>
+          <div class="card flex flex--column flex--justify-evenly">
+            <p class="text-bold-style">Likes</p>
+            <div class="flex flex--justify-between flex--align-center">
+              <p class="card__total-number">107</p>
+              <p class="card__stats card__stats--down">19%</p>
+            </div>
+            <img
+              class="card__icon"
+              src="./images/icon-youtube.svg"
+              alt="Youtube"
+            />
+          </div>
+          <div class="card flex flex--column flex--justify-evenly">
+            <p class="text-bold-style">Total Views</p>
+            <div class="flex flex--justify-between flex--align-center">
+              <p class="card__total-number">1407</p>
+              <p class="card__stats card__stats--down">12%</p>
+            </div>
+            <img
+              class="card__icon"
+              src="./images/icon-youtube.svg"
+              alt="Youtube"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div attribution>
+        <p class="text-bold-style">
+          Challenge by
+          <a
+            class="link"
+            href="https://www.frontendmentor.io?ref=challenge"
+            target="_blank"
+            >Frontend Mentor</a
+          >.
+        </p>
+        <p class="text-bold-style">
+          Coded by <a class="link" href="#">Daniel Naranjo</a>.
+        </p>
+      </div>
+    </footer>
+    <script src="./js/darkMode.js"></script>
+  </body>
 </html>

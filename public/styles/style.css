@@ -44,6 +44,7 @@
 }
 
 body {
+  background: var(--bg);
   font-family: var(--f-family);
   font-size: var(--f-size);
   line-height: 1.4;
@@ -114,7 +115,6 @@ p {
   background-color: var(--bg-pattern);
 }
 
-
 .header {
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
@@ -159,8 +159,6 @@ p {
   }
 }
 
-
-
 .followers {
   margin-bottom: 3.25rem;
   /* 52px */
@@ -168,7 +166,6 @@ p {
 
 /* 600px */
 @media screen and (min-width: 37.5em) {
-
   .followers.grid,
   .overview .grid {
     grid-template-columns: repeat(2, 48%);
@@ -178,7 +175,6 @@ p {
 
 /* 900px */
 @media screen and (min-width: 56.25em) {
-
   .followers.grid,
   .overview .grid {
     grid-template-columns: repeat(3, 32.33%);
@@ -188,15 +184,12 @@ p {
 
 /* 1200px */
 @media screen and (min-width: 75em) {
-
   .followers.grid,
   .overview .grid {
     grid-template-columns: repeat(4, 23%);
     justify-content: space-between;
   }
 }
-
-
 
 /***************
 * COMPONENTS STYLES
@@ -213,6 +206,7 @@ p {
   font-size: 1.5rem;
   /* 21px */
   line-height: 1.5;
+  color: var(--text);
 }
 
 .header__mode {
@@ -234,7 +228,6 @@ p {
   }
 }
 
-
 /* Switch */
 .switch {
   position: relative;
@@ -247,8 +240,8 @@ p {
 
 .switch__label {
   display: block;
-  width: 48px;
-  height: 24px;
+  width: 40px;
+  height: 20px;
   text-indent: -150%;
   clip: rect(0 0 0 0);
   color: transparent;
@@ -273,10 +266,10 @@ p {
 }
 
 .switch__label::after {
-  top: 0;
-  right: 0;
-  width: 24px;
-  height: 24px;
+  top: 11%;
+  right: 3px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   background-color: #fff;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.45);
@@ -284,16 +277,21 @@ p {
   transition: right 0.25s ease;
 }
 
-.switch__input:checked+.switch__label::before {
-  background-color: var(--toggle);
+.switch__input:checked + .switch__label::before {
+  background: linear-gradient(var(--toggle));
 }
 
-.switch__input:checked+.switch__label::after {
-  right: 24px;
+.switch__input:checked + .switch__label::after {
+  top: 10%;
+  width: 16px;
+  height: 16px;
+  right: 21px;
+  background-color: var(--card-bg);
 }
 
 /* Cards */
 .card {
+  color: var(--text);
   background-color: var(--card-bg);
   border-radius: 4px;
   height: 7.75rem;
@@ -464,7 +462,7 @@ p {
 */
 
 .darkTheme {
-  --toggle: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
+  --toggle: hsl(210, 78%, 56%), hsl(146, 68%, 55%);
   --bg: hsl(230, 17%, 14%);
   --bg-pattern: hsl(232, 19%, 15%);
   --card-bg: hsl(228, 28%, 20%);
